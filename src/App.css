@@ -1,0 +1,382 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-bg {
+  background-image: url("https://wallpapercave.com/wp/wp10474163.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+
+/* flag */
+.flag {
+  width: 24px;
+  height: auto;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+/* Form Styling */
+
+.form-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  /* margin-left: 25rem; */
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-container input {
+  width: 92%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: rgba(244, 213, 255, 0.85);
+}
+
+.form-container ::placeholder {
+  color: black;
+}
+
+.form-container select {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  background-color: rgba(244, 213, 255, 0.85);
+  color: black;
+}
+
+.form-container h2 {
+  color: purple;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(to right, #b491f8, #d8afff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background: linear-gradient(to right, #a679ff, #d49fff);
+  color: black;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+} */
+
+.ticket-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 8rem;
+}
+
+/* Ticket Layout */
+.ticket {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 72rem;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.ticket-strip p {
+  font-size: 1rem;
+  margin: 0.1rem 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.ticket-strip qr {
+  box-shadow: 0 0 8px 2px rgba(218, 165, 32, 0.6);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.ticket.rounded {
+  border-radius: 16px;
+}
+
+.ticket.sharp {
+  border-radius: 0px;
+}
+
+.ticket.ticket-stub {
+  border-radius: 8px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 0%);
+}
+
+.ticket.ticket-curved .ticket-strip::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 24px;
+  height: 100%;
+  background: white;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+/* Example: custom quote colors per concert */
+
+.ticket-main p:first-child {
+  font-size: 1rem;
+}
+
+.ticket-love .ticket-main p:first-child {
+  color: rgb(250, 11, 91);
+}
+
+.ticket-permission .ticket-main p:first-child {
+  color: #ffd700; /* Yellow */
+  font-weight: 700;
+}
+
+.ticket-j-hope .ticket-main p:first-child {
+  color: #a40000; /* Red */
+  font-weight: 700;
+}
+
+.ticket-map {
+  color: black;
+}
+.ticket-map .ticket-main p:first-child {
+  color: #6a0dad;
+}
+
+.ticket-speak .ticket-main p:first-child {
+  color: #ffcbee;
+}
+
+.ticket-suga .ticket-main p:first-child {
+  color: #b30a2f;
+}
+
+.ticket-jungkook {
+  position: relative;
+  z-index: 1;
+}
+.ticket-jungkook .ticket-main p {
+  padding-left: 2rem;
+}
+.ticket-jungkook::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  border: 3px solid goldenrod;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ticket-jungkook .ticket-main p:first-child {
+  color: goldenrod;
+  padding: 1.2rem;
+}
+
+/* Ticket Content Sections */
+.ticket-main,
+.ticket-strip {
+  padding: 0.5rem 0.75rem;
+  height: 100%;
+  gap: 0 !important;
+  justify-content: flex-start;
+  gap: 0.25rem;
+}
+
+.ticket-main {
+  flex: 3;
+  backdrop-filter: brightness(0.8);
+  display: flex;
+  flex-direction: column;
+  /* font-weight: 700; */
+  background-color: rgba(126, 126, 126, 0.4);
+}
+
+.ticket-main p {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.ticket-strip {
+  position: relative;
+  flex: 1;
+  display: flex;
+  background-color: rgba(63, 63, 63, 0.8);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  border-left: 2px dashed #fff;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .ticket-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+
+  .ticket {
+    transform: rotate(90deg);
+    transform-origin: center;
+    margin: 2rem;
+    width: 48rem;
+  }
+
+  .download-btn {
+    transform: rotate(180deg);
+    z-index: 2;
+  }
+
+  .form-container {
+    padding: 1.5rem 1rem;
+    width: 80%;
+  }
+
+  .ticket-wrapper {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .ticket-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .ticket {
+    transform: rotate(90deg);
+    transform-origin: center;
+    width: 48rem;
+    height: 20rem;
+  }
+
+  .ticket-jungkook h1 {
+    font-size: 1.5rem;
+  }
+
+  .ticket-jungkook p {
+    margin-bottom: -1rem;
+  }
+  .download-btn {
+    position: absolute;
+    bottom: 26rem;
+    left: -4rem;
+    transform: rotate(90deg);
+    background-color: #6a0dad;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ticket-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+
+  .download-btn {
+    position: absolute;
+    bottom: 26rem;
+    left: -4rem;
+    transform: rotate(90deg);
+    background-color: #6a0dad;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
