@@ -79,12 +79,12 @@ function App() {
 -----------------------
 Name: ${name || "Your Name"}
 Country: ${country || "N/A"}
-Bias: ${bias || "N/A"}
 Concert: ${concert}
 Seat No: ${seatNumber}
 Ticket No: ${ticketNumber}
 
-💜 Thank you for being part of the BTS ARMY!
+Follow me on the socials @thatonegirlinbtech 
+💜 Thank you ARMY!
 `;
 
   useEffect(() => {

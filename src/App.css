@@ -42,7 +42,7 @@ body {
   padding: 2rem;
   width: 100%;
   max-width: 420px;
-  color: #fff;
+  color: purple;
   border: 1px solid rgba(255, 255, 255, 0.25);
   animation: fadeIn 1s ease-in-out;
 }
@@ -55,6 +55,7 @@ body {
   border: none;
   font-size: 1rem;
   background-color: rgba(244, 213, 255, 0.85);
+  color: #6a0dad;
 }
 
 .form-container ::placeholder {
@@ -78,7 +79,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.form-container button {
+/* .form-container button {
   width: 100%;
   padding: 0.75rem;
   background: linear-gradient(to right, #b491f8, #d8afff);
@@ -89,7 +90,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s ease;
-}
+} */
 
 .form-container button:hover {
   background: linear-gradient(to right, #a679ff, #d49fff);
@@ -106,7 +107,7 @@ body {
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-} */
+}
 
 .ticket-wrapper {
   display: flex;
