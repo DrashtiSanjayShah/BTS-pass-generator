@@ -87,7 +87,7 @@ This project is deployed via [Netlify](https://bts-concert-ticket.netlify.app).
 ## 👩‍💻 Author
 
 **Drashti Shah**  
-LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/drashtisanjayshah/ )  
-Portfolio: [Your Portfolio](https://portfolio-c4508.web.app )  
+LinkedIn: [Drashti Sanjay Shah](https://www.linkedin.com/in/drashtisanjayshah/ )  
+Portfolio: [My Portfolio](https://portfolio-c4508.web.app )  
 
 
