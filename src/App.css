@@ -275,6 +275,39 @@ body {
 
 
 /* Mobile Responsiveness */
+
+/* changes for very small screens */
+@media (max-width: 400px) {
+
+  .ticket-wrapper{
+    width: 80vw;
+    height: 70vh;
+  }
+  .ticket {
+    width: 80vw;
+    height: 70vh;
+    /* padding: 1rem; */
+    border-radius: 12px;
+  }
+
+  .ticket-main {
+    font-size: 0.85rem;
+      background-color: rgba(126, 126, 126, 0.4);
+
+  }
+
+  .ticket-strip {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  img.qr {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
 @media (max-width: 600px) {
   .ticket-wrapper {
     width: 100vw;
